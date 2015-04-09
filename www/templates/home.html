@@ -1,0 +1,23 @@
+<!-- <div class="tabs tabs-top">
+  <a class="tab-item"  ng-class='{"active":tab=="home-store"}' ng-click="go('/home/store');tab='store'">
+    Stores
+  </a>
+  <a class="tab-item" ng-class='{"active":tab=="home-orders"}' ng-click="go('/home/orders');tab='orders'">
+    Orders
+  </a>
+</div>
+    <ion-nav-view name="{{tab}}"></ion-nav-view>
+ -->
+ <ion-tabs class="tabs-top tabs-stable">
+
+  <!-- Store Tab -->
+  <ion-tab href="#/home/store" title="Store">
+    <ion-nav-view name="home-store"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Orders Tab -->
+   <ion-tab href="#/home/orders" title="Orders">Orders
+    <ion-nav-view name="home-orders"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
